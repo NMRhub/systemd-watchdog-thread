@@ -4,8 +4,9 @@ import logging
 import os
 import time
 
-from systemd_watchdog_thread import wdt_logger,WatchdogThread
+from systemd_watchdog_thread import wdt_logger,WatchdogThread, __version__
 
+print(f"Version {__version__}")
 
 def main():
     logging.basicConfig()
