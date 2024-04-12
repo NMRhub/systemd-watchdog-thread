@@ -10,8 +10,16 @@ so it will exit when the main program exits.
 
 ## usage
 
+    from systemd_watchdog_thread import WatchdogThread
+
     wdt = WatchdogThread()
     t = wdt.run()
+
+or
+
+    from systemd_watchdog_thread import run_watchdog 
+
+    run_watchdog()
 
 ## testing
 *finish()* may be called to stop sending READY messages. This is provided to test

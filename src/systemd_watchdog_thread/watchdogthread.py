@@ -54,3 +54,8 @@ class WatchdogThread:
                     return
             except:
                 wdt_logger.exception(f"{self.wd_timeout} sleep")
+
+def run_watchdog():
+    """Launch watchdog daemon thread"""
+    wdt = WatchdogThread()
+    wdt.run()
